@@ -1,0 +1,36 @@
+
+.form-group {
+    display: block;
+    margin: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+    label {
+        display: block;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+    input {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #E5E7EB;
+        border-radius: 0.5rem;
+        
+        &:focus {
+            box-shadow: 1px 1px 4px rgba(0, 0, 255, 0.329);
+            border: 1px solid rgba(0, 0, 255, 0.39) !important;            
+            text-decoration: none;
+            outline: none;
+        }
+    }
+    &.error {
+        input {
+            border: 1px solid red;
+        }
+        &::after {
+            content: '* Password do not match';
+            display: block;
+            color: red;
+            font-size: 1rem;
+        }
+    }
+}

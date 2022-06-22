@@ -1,1 +1,110 @@
 @import 'reset';
+@import 'custom-font';
+@import 'form-group';
+@import 'button';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+.container {
+    @media (min-width: 720px) {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+
+.left-side {
+    background-image: url(../images/sbg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+    .container-logo {
+        background-color: rgba(0, 0, 0, 0.521);
+        position: absolute;
+        width: 100%;
+        top: 15rem;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 80%;
+        }
+        span {
+            text-transform: uppercase;
+            color: white;
+            font-size: 6rem;
+            font-family: Norse;
+            font-weight: bold;
+        }
+        @media (min-width: 720px) {
+            position: relative;
+        }    
+    }
+    @media (min-width: 720px) {
+        flex-basis: 35%;
+    }
+}
+
+.right-side {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .description {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.5rem;
+        p {
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+    }
+    .container-form {
+        margin-top: 2.5rem;
+        
+        form {
+            .container-inputs {
+                box-shadow: 2px 1px 8px #888888;
+                padding: 0.5rem;
+                legend {
+                    width: 90%;
+                    margin: 0 auto;
+                    font-size: 2rem;
+                    font-weight: bolder;
+                }
+                .group-row {
+                    @media (min-width: 720px) {
+                        display: flex;
+                        width: 90%;
+                        margin: 0 auto;
+                        justify-content: start;
+                        gap: 2rem;
+                        * {
+                            flex-basis: 35%;
+                            justify-self: start;
+                        }
+                    }   
+                    
+                }
+            }
+        }
+        p {
+            margin: 2rem 0;
+            margin-left: 3rem;
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color: #596D48;
+            }
+        }
+    }
+    @media (min-width: 720px) {
+        flex-basis: 65%;
+    }
+
+}
+
+

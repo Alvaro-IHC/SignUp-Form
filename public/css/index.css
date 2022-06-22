@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -11,4 +12,160 @@ html {
 
 body {
   font-size: 1.6rem;
+}
+
+@font-face {
+  font-family: Norse;
+  src: url("../assets/Norse-Bold.otf");
+}
+@font-face {
+  font-family: Norse;
+  font-weight: bold;
+  src: url("../assets/Norse-Bold.otf");
+}
+.form-group {
+  display: block;
+  margin: 1rem;
+  width: 90%;
+  margin: 1rem auto;
+}
+.form-group label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.5rem;
+}
+.form-group input:focus {
+  box-shadow: 1px 1px 4px rgba(0, 0, 255, 0.329);
+  border: 1px solid rgba(0, 0, 255, 0.39) !important;
+  text-decoration: none;
+  outline: none;
+}
+.form-group.error input {
+  border: 1px solid red;
+}
+.form-group.error::after {
+  content: "* Password do not match";
+  display: block;
+  color: red;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: #596D48;
+  color: white;
+  border-radius: 0.8rem;
+}
+button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 720px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+.left-side {
+  background-image: url(../images/sbg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.left-side .container-logo {
+  background-color: rgba(0, 0, 0, 0.521);
+  position: absolute;
+  width: 100%;
+  top: 15rem;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-side .container-logo img {
+  height: 80%;
+}
+.left-side .container-logo span {
+  text-transform: uppercase;
+  color: white;
+  font-size: 6rem;
+  font-family: Norse;
+  font-weight: bold;
+}
+@media (min-width: 720px) {
+  .left-side .container-logo {
+    position: relative;
+  }
+}
+@media (min-width: 720px) {
+  .left-side {
+    flex-basis: 35%;
+  }
+}
+
+.right-side {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right-side .description {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+.right-side .description p {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.right-side .container-form {
+  margin-top: 2.5rem;
+}
+.right-side .container-form form .container-inputs {
+  box-shadow: 2px 1px 8px #888888;
+  padding: 0.5rem;
+}
+.right-side .container-form form .container-inputs legend {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+@media (min-width: 720px) {
+  .right-side .container-form form .container-inputs .group-row {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: start;
+    gap: 2rem;
+  }
+  .right-side .container-form form .container-inputs .group-row * {
+    flex-basis: 35%;
+    justify-self: start;
+  }
+}
+.right-side .container-form p {
+  margin: 2rem 0;
+  margin-left: 3rem;
+}
+.right-side .container-form p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #596D48;
+}
+@media (min-width: 720px) {
+  .right-side {
+    flex-basis: 65%;
+  }
 }/*# sourceMappingURL=index.css.map */
